@@ -59,23 +59,25 @@ function musicPlayer(){
 	j.play();
 }
 function audioPlayer(){
-	k.play();
 	i.pause();
 	i.currentTime = 0;
 	j.pause();
 	j.currentTime = 0;
 	L.pause();
-	L.currentTime = 0;	
+	L.currentTime = 0;
+	k.play();
 }
 
 function soundPlayer(){
-	L.play();
+	L.pause();
+	L.currentTime = 0;
 	k.pause();
 	k.currentTime = 0;
 	i.pause();
 	i.currentTime = 0;
 	j.pause();
 	j.currentTime = 0;
+	L.play();
 }
 
 function resetAll(){
