@@ -40,7 +40,20 @@ function swapGif(){
 	f.src = "Images/DriverSM.png";
 }
 
+function pauseALL(){
+	i.pause();
+	i.currentTime = 0;
+	j.pause();
+	j.currentTime = 0;
+	k.pause();
+	k.currentTime = 0;
+	L.pause();
+	L.currentTime = 0;
+}
+
 function themePlayer(){
+	i.pause();
+	i.currentTime = 0;
 	j.pause();
 	j.currentTime = 0;
 	k.pause();
@@ -50,6 +63,8 @@ function themePlayer(){
 	i.play();
 }
 function musicPlayer(){
+	j.pause();
+	j.currentTime = 0;
 	i.pause();
 	i.currentTime = 0;
 	k.pause();
@@ -63,20 +78,15 @@ function audioPlayer(){
 	i.currentTime = 0;
 	j.pause();
 	j.currentTime = 0;
+	k.pause();
+	k.currentTime = 0;
 	L.pause();
 	L.currentTime = 0;
 	k.play();
 }
 
 function soundPlayer(){
-	L.pause();
-	L.currentTime = 0;
-	k.pause();
-	k.currentTime = 0;
-	i.pause();
-	i.currentTime = 0;
-	j.pause();
-	j.currentTime = 0;
+	pauseALL();
 	L.play();
 }
 
